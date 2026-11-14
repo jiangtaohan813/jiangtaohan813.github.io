@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="代表项目的研究内容和成果。">
+  <title>代表作 · 个人学术主页</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="content.js" defer></script>
+  <script src="site.js" defer></script>
+</head>
+<body id="top" data-page="project">
+  <a class="skip-link" href="#main" data-i18n="skip">跳转到正文</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="index.html#about" data-profile-name data-site-link>个人主页</a>
+      <nav class="nav" aria-label="主导航" data-i18n-label="navigation">
+        <a href="index.html#about" data-i18n="about" data-site-link>个人信息</a>
+        <a href="project.html" aria-current="page" data-i18n="featured" data-featured data-site-link>代表作</a>
+        <a href="index.html#publications" data-i18n="publications" data-publications data-site-link>论文成果</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="切换语言" data-i18n-label="languageSwitch">
+        <a href="project.html" lang="zh-CN" hreflang="zh-CN" data-language="zh" aria-current="page">中文</a>
+        <a href="?lang=en" lang="en" hreflang="en" data-language="en" aria-label="English">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container project-page" tabindex="-1">
+    <a class="back-link" href="index.html#featured" data-site-link>
+      <span aria-hidden="true">←</span> <span data-i18n="backHome">返回首页</span>
+    </a>
+    <article data-featured>
+      <h1 data-project-title>代表作名称待填写</h1>
+      <figure class="media project-media" data-project-image hidden>
+        <img alt="" decoding="async" hidden>
+        <span class="media-placeholder" data-i18n="projectImagePlaceholder">结果图或视频封面待上传</span>
+      </figure>
+      <dl class="project-facts detail-facts">
+        <dt data-project-question-title>研究问题</dt>
+        <dd data-project-question></dd>
+      </dl>
+      <section id="project-result" class="project-detail-section" hidden>
+        <h2 data-i18n="results">研究结果</h2>
+        <p></p>
+      </section>
+      <section id="project-resources" class="project-detail-section" hidden>
+        <h2 data-i18n="resources">相关资源</h2>
+        <ul class="resource-list" role="list"></ul>
+      </section>
+    </article>
+    <h1 id="no-project" data-i18n="noProject" hidden>暂未设置代表作</h1>
+  </main>
+
+  <footer class="container site-footer">
+    <a href="#top"><span data-i18n="top">回到顶部</span> <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>

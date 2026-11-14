@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="个人学术主页，包含代表作、论文成果、科研项目、荣誉奖项、教育经历和近期动态。">
+  <title>个人学术主页</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="content.js" defer></script>
+  <script src="site.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main" data-i18n="skip">跳转到正文</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="#about" data-profile-name>个人主页</a>
+      <nav class="nav" aria-label="主导航" data-i18n-label="navigation">
+        <a href="#about" data-i18n="about">个人信息</a>
+        <a href="#featured" data-i18n="featured" data-featured>代表作</a>
+        <a href="#publications" data-i18n="publications" data-publications>论文成果</a>
+        <a href="#research-projects" data-i18n="researchProjects" data-research-projects hidden>科研项目</a>
+        <a href="#awards" data-i18n="awards">荣誉奖项</a>
+        <a href="#education" data-i18n="education" data-education hidden>教育经历</a>
+        <a href="#activities" data-i18n="activities">近期动态</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="切换语言" data-i18n-label="languageSwitch">
+        <a href="index.html" lang="zh-CN" hreflang="zh-CN" data-language="zh" aria-current="page">中文</a>
+        <a href="?lang=en" lang="en" hreflang="en" data-language="en" aria-label="English">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    <section id="about" class="profile" aria-labelledby="profile-title">
+      <div class="profile-copy">
+        <h1 id="profile-title" data-profile-name>你的姓名</h1>
+        <p id="profile-position" class="profile-position"></p>
+        <section id="profile-bio" class="profile-bio" aria-labelledby="profile-bio-title" hidden>
+          <h2 id="profile-bio-title" data-i18n="bio">个人简介</h2>
+          <p></p>
+        </section>
+        <dl class="profile-details">
+          <div class="profile-details-research">
+            <dt data-i18n="research">研究方向</dt>
+            <dd id="profile-research">待填写</dd>
+          </div>
+          <div class="profile-details-email">
+            <dt data-i18n="email">邮箱</dt>
+            <dd>
+              <span id="email-placeholder" data-i18n="pending">待填写</span>
+              <span id="profile-email" hidden></span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+      <figure id="portrait" class="media portrait">
+        <img alt="" decoding="async" hidden>
+        <span class="media-placeholder" data-i18n="portraitPlaceholder">头像待上传</span>
+      </figure>
+    </section>
+
+    <section id="featured" class="home-section" aria-labelledby="featured-title" data-featured>
+      <h2 id="featured-title" data-i18n="featured">代表作</h2>
+      <article class="featured-layout">
+        <figure class="media project-media" data-project-image hidden>
+          <img alt="" decoding="async" hidden>
+          <span class="media-placeholder" data-i18n="projectImagePlaceholder">结果图或视频封面待上传</span>
+        </figure>
+        <div class="featured-copy">
+          <h3 data-project-title>代表作名称待填写</h3>
+          <dl class="project-facts">
+            <dt data-project-question-title>研究问题</dt>
+            <dd data-project-question></dd>
+          </dl>
+          <a class="site-button project-link" href="project.html" data-site-link>
+            <span data-i18n="viewProject">查看专题</span><span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section id="publications" class="home-section" aria-labelledby="publications-title" data-publications>
+      <h2 id="publications-title" data-i18n="publications">论文成果</h2>
+      <ul id="paper-list" class="paper-list" role="list"></ul>
+      <div id="publications-more" class="section-actions" hidden>
+        <a class="site-button publications-link" href="publications.html" data-site-link>
+          <span data-i18n="viewAllPublications">查看更多</span><span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="research-projects" class="home-section" aria-labelledby="research-projects-title" data-research-projects hidden>
+      <h2 id="research-projects-title" class="section-title" data-i18n="researchProjects">科研项目</h2>
+      <ul id="research-projects-list" class="record-list" role="list"></ul>
+      <div id="research-projects-more" class="section-actions" hidden>
+        <a class="site-button records-link" href="records.html?section=research-projects" data-site-link data-i18n-label="viewResearchProjects">
+          <span data-i18n="viewMore">查看更多</span><span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="awards" class="home-section" aria-labelledby="awards-title">
+      <h2 id="awards-title" class="section-title" data-i18n="awards">荣誉奖项</h2>
+      <ul id="awards-list" class="record-list" role="list"></ul>
+      <div id="awards-more" class="section-actions" hidden>
+        <a class="site-button records-link" href="records.html?section=awards" data-site-link data-i18n-label="viewAwards">
+          <span data-i18n="viewMore">查看更多</span><span aria-hidden="true">→</span>
+        </a>
+      </div>
+      <div class="certificate-preview">
+        <ul class="photo-grid certificate-grid" data-photo-gallery="certificates" role="list"></ul>
+        <div class="section-actions">
+          <a class="site-button gallery-link" href="gallery.html?album=certificates" data-site-link data-i18n-label="viewCertificates">
+            <span data-i18n="viewMorePhotos">查看更多照片</span><span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="home-section" aria-labelledby="education-title" data-education hidden>
+      <h2 id="education-title" class="section-title" data-i18n="education">教育经历</h2>
+      <ul id="education-list" class="record-list" role="list"></ul>
+    </section>
+
+    <section id="activities" class="home-section" aria-labelledby="activities-title">
+      <h2 id="activities-title" class="section-title" data-i18n="activities">近期动态</h2>
+      <ul class="photo-grid" data-photo-gallery="activities" role="list"></ul>
+      <div class="section-actions">
+        <a class="site-button gallery-link" href="gallery.html?album=activities" data-site-link data-i18n-label="viewActivities">
+          <span data-i18n="viewMore">查看更多</span><span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container site-footer">
+    <a href="#top"><span data-i18n="top">回到顶部</span> <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
